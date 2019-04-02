@@ -1,0 +1,603 @@
+/* CSS reset start */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS reset end */
+
+body {
+  font-size: 15px;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif !important;
+}
+
+.clearFloat {
+  clear: both;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.header {
+  position: relative;
+  z-index: 999;
+}
+
+.header .social {
+  background: rgb(246, 246, 246);
+}
+
+.header .social ul {
+  float: right;
+  padding: 5px;
+}
+
+.header .social ul li {
+  font-size: 15px;
+  float: left;
+  padding: 5px;
+}
+
+.header .social ul li:hover {
+  font-weight: bold;
+}
+
+.header .social ul li a {
+  text-decoration: none;
+}
+
+.header .social ul li .fbLink {
+  color: rgb(68, 96, 160);
+}
+
+.header .social ul li .twitterLink {
+  color: rgb(0, 170, 236);
+}
+
+.header .social ul li img {
+  vertical-align: middle;
+  height: 15px;
+  width: 15px;
+  padding-right: 5px;
+}
+
+.header .social ul li:nth-child(1):after {
+  color: rgb(204, 204, 204);
+  content: "|";
+  padding-left: 10px;
+}
+
+@media (max-width:768px) {
+  .header .social {
+    display: none;
+  }
+}
+
+.header .nav {
+  overflow: visible;
+}
+
+.header .nav .headerLogo {
+  background: url("../images/headerLogo.png") left top no-repeat;
+  display: inline-block;
+  width: 170px;
+  height: 56px;
+  margin: 0 15px;
+  text-indent: -99999em;
+  background-position: center center;
+}
+
+@media (max-width:768px) {
+  .header .nav .headerLogo {
+    display: block;
+    width: 100%;
+    background-position: center center;
+    margin: 0 auto;
+  }
+}
+
+.header .nav .navBar {
+  float: right;
+}
+
+.header .nav ul li {
+  background-color:white;
+}
+
+.header .nav .navBar .courseIntro {
+  display: none;
+  z-index: 9999;
+}
+
+.header .nav .navBar>li {
+  font-size: 15px;
+  float: left;
+}
+
+@media (max-width:768px) {
+  .header .nav {
+    height: initial;
+  }
+  .header .nav .navBar {
+    display: block;
+    float: none;
+  }
+  .header .nav .navBar>li {
+    float: none;
+    display: inline;
+  }
+}
+
+.header .nav .navBar li a {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  color: rgb(66, 211, 169) !important;
+  height: 100%;
+  padding: 20px 20px;
+}
+
+.header .nav .navBar .course.active {
+  font-weight: bold;
+}
+
+.header .nav .navBar .course.active:after {
+  width: 100%;
+}
+
+.header .nav .navBar .courseIntro li {
+  text-align: center;
+}
+
+.header .nav .navBar .courseIntro li a {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.header .nav .navBar li a:after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 4px;
+  background: rgb(66, 211, 169);
+}
+
+.header .nav .navBar li a:hover {
+  font-weight: bold;
+}
+
+.header .nav .navBar li a:hover:after {
+  width: 100%;
+}
+
+@media (max-width:768px) {
+  .header .nav .navBar li a {
+    padding: 3% 0;
+    width: 49.7%;
+  }
+  /* inline-block has 4px blank */
+  .header .nav .navBar li a:after {
+    right: 25%;
+    bottom: 0;
+  }
+  .header .nav .navBar li a:hover:after {
+    width: 50%;
+  }
+  .header .nav .navBar .course.active:after {
+    width: 50%;
+  }
+}
+
+.content {
+  z-index: 50;
+}
+
+.content .banner,
+.content .banner2,
+.content .banner3 {
+  position: relative;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 346px;
+}
+
+.content .banner {
+  background: url("../images/banner.png");
+}
+
+.content .banner2 {
+  background: url("../images/banner2.png");
+}
+
+.content .banner3 {
+  background: url("../images/banner3.png");
+}
+
+.content .banner p,
+.content .banner2 p,
+.content .banner3 p {
+  font-size: 40px;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+@media (max-width:768px) {
+  .content .banner p,
+  .content .banner2 p,
+  .content .banner3 p {
+    font-size: 32px;
+  }
+}
+
+.content .banner:after,
+.content .banner2:after,
+.content .banner3:after {
+  background: rgba(0, 0, 0, 0.15);
+  content: "";
+  position: absolute;
+  height: 160px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.content .intro ul .htmlCard,
+.rwdCard,
+.jQueryCard {
+  /* height: 325px; */
+  width: 30%;
+  margin: 5% calc(10%/6) 0 calc(10%/6);
+  float: left;
+  border-radius: 2px;
+  box-shadow: 0px 1px 1px 1px rgb(214, 214, 214);
+}
+
+.content .intro .card img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content .intro ul li h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.content .intro ul li p {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  padding: 10px 15px 25px 15px;
+}
+
+/* .content .intro .jQueryCard {
+  position: relative;
+} */
+
+/* .content .intro .jQuery {
+  line-height: 20px;
+  position: absolute;
+  list-style: initial;
+  margin: 2px;
+  top: 220px;
+  left: 35px;
+} */
+
+@media (max-width:768px) {
+  .content .intro ul .htmlCard,
+  .rwdCard,
+  .jQueryCard {
+    width: 45%;
+    margin: 5% calc(10%/4) 0 calc(10%/4);
+  }
+}
+
+/* <320則會生效 */
+
+@media (max-width:320px) {
+  .content .intro>ul>li {
+    width: 90%;
+  }
+}
+
+.content h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.content .different {
+  margin-bottom: 70px;
+}
+
+.content .different h2 {
+  margin-top: 5%;
+}
+
+.content .different table {
+  text-align: left;
+  text-indent: 2em;
+  line-height: 2.5em;
+  margin: 30px auto;
+  width: 84%;
+}
+
+@media (max-width:768px) {
+  .content .different table {
+    width: 95%;
+  }
+}
+
+.content .different table th {
+  background: rgb(247, 247, 247);
+}
+
+.content .different table tr {
+  border: 1px solid rgb(221, 221, 221);
+  border-right: 0px;
+  border-left: 0px;
+}
+
+.content .different table tr:hover {
+  background: rgba(255, 255, 192, 0.3);
+}
+
+.content .contact {
+  background: linear-gradient(rgb(0, 100, 75), rgb(0, 152, 114));
+}
+
+.content .contact p {
+  color: white;
+  line-height: 1.5em;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+}
+
+.content .contact .formLeft,
+.formRight {
+  width: 50%;
+}
+
+.content .contact textarea {
+  display: block;
+  resize: none;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 3px;
+  width: 90.8%;
+  height: 245px;
+  margin: 0 20px;
+  margin-bottom: 30px;
+}
+
+.content .contact .formLeft {
+  float: left;
+}
+
+.content .contact .formRight {
+  display: inline-block;
+}
+
+.content .contact label {
+  display: inline-block;
+  color: white;
+  margin: 5px 20px;
+}
+
+.content .contact input {
+  display: block;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 3px;
+  width: 90.8%;
+  margin: 0 20px;
+  margin-bottom: 5px;
+}
+
+.content .contact .submit {
+  background: rgb(0, 204, 153);
+  float: right;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  width: auto;
+  margin: 10px 20px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.content .contact .submit:hover {
+  font-weight: bold;
+}
+
+@media (max-width:768px) {
+  .content .contact .formLeft,
+  .formRight {
+    width: 100%;
+  }
+  .content .contact .submit {
+    display: block;
+    margin: 10px 42%;
+  }
+}
+
+.footer img {
+  margin: 20px;
+}
+
+.footer p {
+  line-height: 1.5em;
+  float: right;
+  margin: 20px;
+}
+
+.footer p span {
+  color: rgb(225, 45, 128);
+}
+
+@media (max-width:768px) {
+  .footer img {
+    display: block;
+    margin: 20px auto;
+  }
+  .footer p {
+    float: none;
+    text-align: center;
+  }
+}
+
+.wrap .topButton {
+  font-size: 30px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.75);
+  right:10px;
+  bottom:10px;
+  border-radius: 3px;
+  width: 1em;
+  text-align: center;
+  color: initial !important;
+  display: none;
+}
