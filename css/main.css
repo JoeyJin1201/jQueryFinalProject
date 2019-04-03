@@ -246,6 +246,7 @@ a {
 .header .nav .navBar>li {
   font-size: 15px;
   float: left;
+  position: relative;
 }
 
 @media (max-width:768px) {
@@ -277,6 +278,11 @@ a {
 
 .header .nav .navBar .course.active:after {
   width: 100%;
+}
+
+.header .nav .navBar .courseIntro {
+  width: 100%;
+  position: absolute;
 }
 
 .header .nav .navBar .courseIntro li {
