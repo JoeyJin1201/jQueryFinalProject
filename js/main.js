@@ -37,8 +37,8 @@ $(document).ready(function(){
   });
 
   $('.topButton').click(function(){
-    event.preventDefault();
     $('html, body').animate({scrollTop : 0},400);
+    event.preventDefault();
   });
 
 })
