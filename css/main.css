@@ -241,6 +241,7 @@ a {
 .header .nav .navBar .courseIntro {
   display: none;
   z-index: 9999;
+  right:0;
 }
 
 .header .nav .navBar>li {
@@ -261,6 +262,10 @@ a {
     float: none;
     display: inline;
   }
+}
+
+@media (max-width:638px) {
+  
 }
 
 .header .nav .navBar li a {
