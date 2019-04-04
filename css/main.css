@@ -282,12 +282,9 @@ a {
 .header .nav .navBar .courseIntro {
   width: 100%;
   position: absolute;
-<<<<<<< HEAD
   display: none;
   z-index: 9999;
   right:0;
-=======
->>>>>>> master
 }
 
 .header .nav .navBar .courseIntro li {
